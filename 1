@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int N, i, b, c=0, n;
+    cin >> N;
+    n = N;
+    int arr =int[N];
+    int barr = int[N];
+    for (i = 0; i < N; i++) {
+        cin >> arr[i];
+    }
+    barr[0] = arr[0];                           
+    for (i = 0; i < N; i++) {                      
+        if (arr[i] != arr[i + 1]) {
+                barr[c] = arr[i];
+                c++;
+        }
+    }
+        for (i = 0; i < c; i++) {
+        cout<< barr[i];
+    }
+}
