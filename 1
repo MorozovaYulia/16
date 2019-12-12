@@ -4,19 +4,19 @@ int main()
 {
     int N, i, b, c=0;
     cin >> N;
-    int arr[N];
-    int barr[N];
+    int A[N];
+    int B[N];
     for (i = 0; i < N; i++) {
-        cin >> arr[i];
+        cin >> A[i];
     }
-    barr[0] = arr[0];                           
+    B[0] = A[0];                           
     for (i = 0; i < N; i++) {                      
-        if (arr[i] != arr[i + 1]) {
-                barr[c] = arr[i];
+        if (A[i] != A[i + 1]) {
+                B[c] = A[i];
                 c++;
         }
     }
         for (i = 0; i < c; i++) {
-        cout<< barr[i];
+        cout<< B[i];
     }
 }
